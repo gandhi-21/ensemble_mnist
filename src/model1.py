@@ -6,18 +6,6 @@ from sklearn.preprocessing import OneHotEncoder
 from helper import conv2d, max_pool_2x2, dense_to_onehot
 
 
-# train_df = pd.read_csv('../input/train.csv')
-# y_train = train_df['label']
-# x_train = train_df.drop(labels = ['label'], axis=1)
-
-# x_train = x_train / 255.0
-# train_x, x_test, train_y, y_test = train_test_split(x_train, y_train, test_size=0.2, random_state=42)
-
-# train_y = dense_to_onehot(train_y, 10)
-# train_y = train_y.astype(np.uint8)
-
-# y_test = dense_to_onehot(y_test, 10)
-# y_test = y_test.astype(np.uint8)
 
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
